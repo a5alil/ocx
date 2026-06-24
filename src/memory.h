@@ -34,7 +34,7 @@ namespace ocx {
 
         void load(const char*);
 
-        ocx::response transact(const ocx::transaction& tx);
+        response transact(const transaction& tx);
     };
 
 }

@@ -67,7 +67,7 @@ namespace ocx {
         ERROR_ON(!file.good(), "unable to read %s", path);
     }
 
-    ocx::response memory::transact(const ocx::transaction& tx) {
+    response memory::transact(const transaction& tx) {
         (void)tx;
         return RESP_FAILED;
     }

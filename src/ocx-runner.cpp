@@ -23,7 +23,7 @@
 
 using namespace std;
 
-namespace ocx {
+namespace ocx20250721::ocx {
     class runenv : public env {
     public:
         runenv(memory &mem) :
@@ -114,6 +114,10 @@ namespace ocx {
             (void)data;
             (void)iswr;
             abort();
+        }
+
+        void wakeup_core(u64 idx) override {
+            (void)idx;
         }
 
     private:

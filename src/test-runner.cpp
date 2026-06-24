@@ -380,7 +380,7 @@ TEST_F(ocx_core, breakpoint_add_remove) {
     free_nop_code(codebuf);
 }
 
-ACTION_P(GetPtr, codebuf, codebuf_sz) {
+ACTION_P2(GetPtr, codebuf, codebuf_sz) {
     return arg0 < codebuf_sz ? (u8*)codebuf + arg0 : nullptr;
 }
 
